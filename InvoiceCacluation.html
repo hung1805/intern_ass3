@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice calculate</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Caculate monthly electricity bill for customers</h2>
+      <div>
+        <label for="start-period">Start-up Period: </label>
+        <input type="number" name="start-period" id="start-period" />
+      </div>
+      <br />
+      <div>
+        <label for="end-period">End-of-term digits: </label>
+        <input type="number" name="end-period" id="end-period" />
+      </div>
+      <br />
+      <div>
+        <label for="vax">The VAX Tax: </label>
+        <input type="text" value="10%" disabled />
+      </div>
+      <br />
+      <div>
+        <label for="num-of-letter">The Number of Letters: </label>
+        <input type="text" name="num-of-letter" id="num-of-letter" disabled />
+      </div>
+      <br />
+      <div>
+        <label for="total">The total amout payable: </label>
+        <input type="text" name="total" id="total" disabled />
+      </div>
+      <div class="btn-container">
+        <button id="cal-btn">Caculate the Electricity</button>
+        <button id="clear-btn">Clear</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

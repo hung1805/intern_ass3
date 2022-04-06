@@ -1,0 +1,43 @@
+.container {
+  padding: 4rem 20rem;
+  border: 3px solid green;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 3rem;
+}
+table {
+  display: none;
+  margin: 0 auto;
+  color: #333;
+  background: white;
+  border: 1px solid grey;
+  font-size: 12pt;
+  border-collapse: collapse;
+}
+thead {
+  background-color: grey;
+  width: 100%;
+}
+tr {
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 2rem 4rem;
+}
+.show {
+  display: table-cell;
+}
+.btn-container {
+  margin-top: 2rem;
+}
+.btn-container button {
+  padding: 0.5rem 1rem;
+}

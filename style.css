@@ -1,0 +1,35 @@
+.container {
+  margin: 4rem 20rem;
+  padding: 1rem 10rem;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container div {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container div label {
+  display: inline-block;
+  flex: 1;
+}
+.contianer div input {
+  flex: 1;
+}
+.btn-container {
+  display: flex;
+  margin-top: 2rem;
+}
+button {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+}
+input {
+  padding: 0.5rem;
+}
+input:focus {
+  border-color: blue;
+}
