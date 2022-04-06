@@ -6,14 +6,13 @@ const total = document.querySelector('#total');
 const clearBtn = document.querySelector('#clear-btn');
 const calBtn = document.querySelector('#cal-btn');
 const caculateAmount = () => {
-  const starPer = startPeriod.value;
-  const endPer = endPeriod.value;
+  const starPer = +startPeriod.value;
+  const endPer = +endPeriod.value;
   const numOfLet = endPer - starPer;
 
-  if (starPer === '') return alert('Please enter start period');
-  if (typeof starPer == 'number') return alert('Please enter start period in numberic');
-  if (endPer === '') return alert('Please enter end period');
-  if (typeof endPer == 'number') return alert('Please enter end period in numberic');
+  if (starPer === '' || endPer === '') return alert('Please enter period');
+  if (isNaN(starPer)) return alert('Please enter start period in numberic');
+  if (isNaN(endPer)) return alert('Please enter end period in numberic');
 
   if (endPer < starPer) return alert('Please enter end period greater than start period');
 
